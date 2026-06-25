@@ -1,0 +1,399 @@
+/* style.css - Harici stil dosyası */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #f48fb1 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #4a2c3a;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#heartRain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+section, .header, footer {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 28px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 12px 40px rgba(233, 30, 99, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+.header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #d81b60, #ec407a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+}
+
+.subhead {
+  font-size: 1.1rem;
+  color: #6d4c5a;
+  margin-top: 8px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lego-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.lego-couple {
+  font-size: 4.5rem;
+  line-height: 1.4;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+}
+
+.lego-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5d3a4a;
+  margin-top: 6px;
+}
+
+.timer-section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #7b4b5a;
+  margin-bottom: 16px;
+}
+
+.timer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.time-box {
+  background: rgba(233, 30, 99, 0.08);
+  padding: 12px 6px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 30, 99, 0.15);
+}
+
+.time-box .num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d81b60;
+  line-height: 1.2;
+}
+
+.time-box .label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #8a5a6a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* GALERİ */
+.gallery-section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #7b4b5a;
+  margin-bottom: 4px;
+}
+
+.gallery-sub {
+  text-align: center;
+  color: #8a5a6a;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(233, 30, 99, 0.25);
+  z-index: 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.5));
+  padding: 20px 10px 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.flower-button-container {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.flower-msg {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6d4c5a;
+}
+
+.click-me {
+  display: inline-block;
+  background: #d81b60;
+  color: white;
+  padding: 4px 18px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 6px;
+}
+
+.click-me:hover {
+  transform: scale(1.08);
+  background: #ad1457;
+  box-shadow: 0 4px 16px rgba(216, 27, 96, 0.4);
+}
+
+/* LOVE LIST */
+.love-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.love-list li {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  background: rgba(233, 30, 99, 0.05);
+  border-radius: 16px;
+  border-left: 4px solid #ec407a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: background 0.2s;
+}
+
+.love-list li:hover {
+  background: rgba(233, 30, 99, 0.12);
+}
+
+.love-end {
+  font-weight: 600;
+  text-align: center;
+  color: #7b4b5a;
+  margin-top: 12px;
+  font-size: 1.05rem;
+  padding: 10px;
+  background: rgba(216, 27, 96, 0.06);
+  border-radius: 20px;
+}
+
+/* INTERACTIVE */
+.interactive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.spin-win, .compatibility {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 18px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.spin-win h3, .compatibility h3 {
+  font-size: 1.2rem;
+  color: #5d3a4a;
+  margin-bottom: 10px;
+}
+
+.spin-win button, .compatibility button {
+  background: #d81b60;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(216, 27, 96, 0.3);
+  margin: 4px 0;
+}
+
+.spin-win button:hover, .compatibility button:hover {
+  transform: scale(1.05);
+  background: #ad1457;
+  box-shadow: 0 6px 20px rgba(216, 27, 96, 0.4);
+}
+
+.compatibility input {
+  display: block;
+  margin: 8px auto;
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1.5px solid #ec407a;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  width: 80%;
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+}
+
+#spinResult, #compResult {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #5d3a4a;
+  min-height: 28px;
+  font-size: 1rem;
+}
+
+/* SONGS */
+.songs h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #7b4b5a;
+  margin-bottom: 14px;
+}
+
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.song-card {
+  background: rgba(233, 30, 99, 0.08);
+  padding: 16px 8px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #4a2c3a;
+  border: 1px solid rgba(233, 30, 99, 0.12);
+  transition: all 0.3s;
+}
+
+.song-card:hover {
+  transform: scale(1.04);
+  background: rgba(233, 30, 99, 0.15);
+}
+
+.song-card span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7b4b5a;
+  margin-top: 4px;
+}
+
+.moon {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.moon h2 {
+  color: #4a2c3a;
+  font-size: 1.6rem;
+}
+
+.phase {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6d4c5a;
+  margin-top: 4px;
+}
+
+footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7b4b5a;
+  padding: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+  .timer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .interactive {
+    grid-template-columns: 1fr;
+  }
+  .song-list {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  section, .header, footer {
+    padding: 18px 16px;
+  }
+}

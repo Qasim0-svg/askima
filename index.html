@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤️ Sevgili Sayfam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="heartRain"></canvas>
+
+  <div class="container">
+    <header class="header">
+      <h1>💖 Canım aşkım, Gülüme 💖</h1>
+      <p class="subhead">Seni seviyorum, küçük bir sürpriz :)</p>
+    </header>
+
+    <section class="lego-section">
+      <p> Neden bizim de sitemiz olmasın ki. Canım sevgilim benim iyi ki benimlesin, iyi ki seni seviyorum. Bana farkında olmadan o kadar çok
+        şey katıyorsun ki senin için uğraştığım her şeyin o kadar anlamı ve değeri oluyor ki. Sana ayırdığım her saniyeden keyif alıyorum.
+        Bana kalbini açtığın için teşekkür ederim. Bize özel ölümsüz bir anı yaratmak istedim. Umarım beğenirsin. Seni çok seviyorum. ❤️
+      </p>
+    </section>
+
+    <section class="timer-section">
+      <h2>⏳ Birlikte Geçen Zaman</h2>
+      <div class="timer-grid">
+        <div class="time-box"><span class="num" id="years">00</span><span class="label">YIL</span></div>
+        <div class="time-box"><span class="num" id="months">06</span><span class="label">AY</span></div>
+        <div class="time-box"><span class="num" id="days">28</span><span class="label">GÜN</span></div>
+        <div class="time-box"><span class="num" id="hours">04</span><span class="label">SAAT</span></div>
+        <div class="time-box"><span class="num" id="minutes">00</span><span class="label">DAKİKA</span></div>
+        <div class="time-box"><span class="num" id="seconds">00</span><span class="label">SANİYE</span></div>
+      </div>
+    </section>
+
+    <!-- ALBÜM GALERİSİ -->
+    <section class="gallery-section">
+      <div id="albumContainer"></div>
+      <!-- Lale butonu -->
+      <div class="flower-button-container">
+        <p class="flower-msg">Biliyorum laleleri seviyosun c:<span class="click-me">Tıkla beni</span></p>
+      </div>
+    </section>
+
+    <section class="love-list">
+      <h2>💞 Sende Sevdiğim Şeyler</h2>
+      <ul>
+        <li> O gülüşün ve ışıl ışıl güzelliğini</li>
+        <li> Her zaman tatlı anlayışını</li>
+        <li> Bide o güzel mizahın he, hem komik hem zeki</li>
+        <li> Benimle birlikte bir gelecek dilemeni</li>
+        <li> Kendin olmaktan korkmaman, sevginden sakınmamanı</li>
+        <li> Kelimelerin anlamlarını baştan yazmanı</li>
+        <li> Sen benim minik bebekimsin ve o bebeği çok seviyorum</li>
+      </ul>
+      <p class="love-end">Benim için yaptığın şeyler asla bitmiyor, her yeni şeyi seninle yapmak istiyorum</p>
+    </section>
+
+    <section class="interactive">
+      <div class="spin-win">
+        <h3>Tıkla bakim ne gelcek c:</h3>
+        <button id="spinBtn">Çevir</button>
+        <p id="spinResult">Çarkı çevirmek için tıkla</p>
+      </div>
+      <div class="compatibility">
+        <h3>💕 Uyum Hesaplayıcı</h3>
+        <input type="text" id="compName" placeholder="Adını gir" value="Kasım">
+        <button id="compBtn">💖 Hesapla</button>
+        <p id="compResult">❤️ %100 uyum gelene kadar zorla</p>
+      </div>
+    </section>
+
+    <section class="songs">
+      <h2>🎵 Bana Seni Hatırlatan Şarkılar</h2>
+      <div class="song-list">
+        <div class="song-card">Batonebo<br> <span>Odetta Hartman</span></div>
+        <div class="song-card">Gönlüm <br> <span>Electro tülay</span></div>
+        <div class="song-card">Dead and Lovely<br> <span>Tom Waits</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>💌 Benimle olduğun için çok şanslıyım çooook</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
